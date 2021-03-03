@@ -46,6 +46,17 @@ int main() {
 }
 ```
 
+Results in this output:
+
+```
+!!!! LEAKED 1 INSTANCES OF Person
+Leaked object at 0x7fb4b8405870 (size 24, /Users/example/Project/main:20)
+Leaked object at 0x7fb4b84058f0 (size 4, /Users/example/Project/main:8)
+Leaked object at 0x7fb4b8405960 (size 10, /Users/example/Project/main:9)
+*** 3 leaks found
+```
+
+
 ## Notes
 
 The include checks if `NDEBUG` is defined. This is automatically added to release builds by CMAKE
